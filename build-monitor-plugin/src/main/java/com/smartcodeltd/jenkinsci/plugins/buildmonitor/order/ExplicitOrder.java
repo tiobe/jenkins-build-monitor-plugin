@@ -24,7 +24,7 @@ public class ExplicitOrder implements Comparator<Job<?, ?>> {
 
     public void setExplicitOrder(String explicitOrder) {
         order = new HashMap<String, Integer>();
-        String[] builds = explicitOrder.split("[ ,]+");
+        String[] builds = explicitOrder.split("[,]+");
         for (int i = 0; i < builds.length; i++) {
             order.put(builds[i], i);
         }
